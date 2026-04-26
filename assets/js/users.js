@@ -1,3 +1,5 @@
+
+
 function renderUsers() {
   let users = JSON.parse(localStorage.getItem("userstest")) || [];
   const userGrid = document.querySelector(".users-grid");
@@ -11,7 +13,7 @@ function renderUsers() {
 
   let htmlContent = "";
 
-  users.forEach((e, i) => {
+users.forEach((e, i) => {
     let firstLetter = e.firsName ? e.firsName.charAt(0).toUpperCase() : "U";
 
     htmlContent += `
@@ -32,10 +34,10 @@ function renderUsers() {
                 </div>
             </div>
         `;
-
-    userGrid.innerHTML = htmlContent;
   });
-  console.log(users);
+  
+  // Sikldan tashqarida yoziladi:
+  userGrid.innerHTML = htmlContent;
 
 }
 
@@ -101,5 +103,3 @@ function deleteUser(index) {
   renderUsers();
 }
 renderUsers();
-
-console.log(users);
