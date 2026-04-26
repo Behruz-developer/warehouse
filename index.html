@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./index.css">
         <title>Document</title>
+        <script>
+            let userRole = localStorage.getItem("role"); 
+
+            if (!userRole) {
+                window.location.replace("./pages/login.html"); 
+            }
+        </script>
     </head>
     <body>
         <div id="menu-container"></div>
