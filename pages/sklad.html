@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklad</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../assets/css/sklad.css">
+</head>
+<body>
+    
+
+        <nav class="nav">
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li class="mav-link">
+                        <a href="../../index.html">Dashboard</a>
+                    </li>
+                    <li class="mav-link">
+                        <a href="../../pages/sklad.html">Sklad</a>
+                    </li>
+                    <li class="mav-link">
+                        <a href="../../pages/products.html">Category</a>
+                    </li>
+                    <li class="mav-link">
+                        <a href="../../pages/products.html">Product</a>
+                    </li>
+                    <li class="mav-link">
+                        <a href="../../pages/users.html">User</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="main-content">
+        
+        <div class="page-header">
+            <h2>Skladlarni boshqarish</h2>
+        </div>
+
+        <div class="sklad-form-card" id="sklad-form">
+            <h3>Yangi sklad yaratish</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="sklad-name">Sklad nomi</label>
+                    <input type="text" id="sklad-name" placeholder="Masalan: Asosiy ombor" required>
+                </div>
+                <div class="form-group">
+                        <label for="sklad-role">Masul xodim</label>
+                        <select id="sklad-role" required>
+                            <option value="" disabled selected >Xodimni tanlang</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="form-actions">
+                <button class="btn-secondary" id="cancel-btn">Bekor qilish</button>
+                <button class="btn-primary" id="save-btn">Saqlash</button>
+            </div>
+        </div>
+
+        <div class="sklad-grid">
+
+        </div>
+    </div>
+
+
+    <script src="../assets/js/sklad.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import url('./assets/css/login.css');
+@import url('./assets/css/menu.css');
+@import url('./assets/css/register.css');
+@import url('./assets/css/users.css');
+@import url('./assets/css/sklad.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex; /* Qutilarni yonma-yon qo'yish uchun */
+    margin: 0;
+    min-height: 100vh; /* Ekran bo'yicha to'liq uzunlikda bo'lishi uchun */
+}
+
+#menu-container {
+    /* Menyu o'z ichidagi yozuvga qarab avtomatik kengayadi yoki torayadi */
+    position: sticky; /* Sahifani pastga tushirganda menyu qotib turishi uchun */
+    top: 0;
+    height: 100vh; 
+}
+
+.main-content {
+    flex: 1; /* Menyudan ortib qolgan barcha joyni o'ziga oladi */
+    padding: 20px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,35 @@
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-box input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-box button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
